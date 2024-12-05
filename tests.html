@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tests - SenseCl2</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .hero{
+            min-height: 20vh;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <h1 class="logo">SenseCl2</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="tests.html" class="active">Tests</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Tests Section -->
+    <section class="hero">
+        <h2>Tests</h2>
+        <p>Check real-time water quality data below:</p>
+    </section>
+
+    <section class="tests-container">
+        <div class="test-card">
+            <h3>Chlorine Levels</h3>
+            <p>Live Data: <span id="chlorine-data">Fetching...</span></p>
+        </div>
+        <div class="test-card">
+            <h3>pH Levels</h3>
+            <p>Live Data: <span id="ph-data">Fetching...</span></p>
+        </div>
+        <div class="test-card">
+            <h3>Water Temperature</h3>
+            <p>Live Data: <span id="temperature-data">Fetching...</span></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 SenseCl2 | Smart Automation for Water Testing</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
